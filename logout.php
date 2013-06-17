@@ -1,0 +1,9 @@
+<?php
+        @session_start();
+        @session_destroy();
+		@session_unregister(user_id);
+		@session_unregister(user_name);
+		@session_unregister(user_pass);
+		@session_unregister(user_email);
+        header("location:login.php");
+?>
